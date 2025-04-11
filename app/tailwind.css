@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  @apply bg-white text-gray-900;
+}
+
+/* Dark mode styles - only apply when explicitly enabled */
+.dark {
+  @apply bg-gray-950 text-white;
+}
+
+/* Ensure inputs have proper contrast */
+input, select, textarea {
+  @apply text-gray-900 bg-white;
+}
+
+/* Ensure buttons have proper contrast */
+button {
+  @apply text-gray-900;
+}
+
+/* Override for primary buttons */
+.bg-blue-600 {
+  @apply text-white;
+}
